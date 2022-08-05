@@ -1,37 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title> Etch-A-Sketch </title>
+    <link rel="stylesheet" href="reset.css">
+    <title>Sketch</title>
 </head>
-
 <body>
+
     <div class="container">
-        <div class="title">
-            <h1>Etch-A-Sketch</h1>
+        <div class="titulo"><h1>Sketch</h1></div>
+        <div class="buttons">
+            <button onclick="changeColor('White')">White</button>
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('random')">Random</button>
+            <button onclick="reset()">Reset</button>
         </div>
-
-        <div class="content">
-            <div class="board"></div>
-            <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>reset</button>
-            </div>
-        </div>
-
-        <div><input type="text" placeholder="size of board" value="16" onchange="changeSize(this.value)"></div>
-        <button>set size</button>
-
+        <div class="board"></div>
+        <input type="text" onchange="changeSize(this.value)">
+        <button>Set size</button>
     </div>
+
 
     <script src="index.js"></script>
 </body>
-
 </html>
