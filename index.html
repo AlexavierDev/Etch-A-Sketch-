@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="media/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <title>Sketch</title>
+    <title>Etch A Sketch</title>
 </head>
+
 <body>
 
     <div class="container">
-        <div class="titulo"><h1>Sketch</h1></div>
-        <div class="buttons">
-            <button onclick="changeColor('White')">White</button>
-            <button onclick="changeColor('black')">Black</button>
-            <button onclick="changeColor('random')">Random</button>
-            <button onclick="reset()">Reset</button>
+        <div class="titulo">
+            <h1>Etch A Sketch</h1>
         </div>
         <div class="board"></div>
-        <input type="text" onchange="changeSize(this.value)">
-        <button>Set size</button>
+        <div class="buttons">
+            <button onclick="changeColor('White')">White</button>
+            <button id="black" onclick="changeColor('black')">Black</button>
+            <button id="random" onclick="changeColor('random')">Random</button>
+            <button id="white" onclick="reset()">Reset</button>
+        </div>
+        <div class="sets">
+            <div class="circle"></div>
+
+            <input id="sizeBoard" type="text" onchange="changeSize(this.value)"
+                placeholder="Enter value for set size sreen">
+
+            <div class="circle"></div>
+
+        </div>
+
     </div>
 
 
     <script src="index.js"></script>
 </body>
+
 </html>

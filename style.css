@@ -1,15 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/media/backgroundKids.jpg);
+   
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.504);
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    gap: 21px;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    background-color: red;
+    margin: 0 auto;
+    width: 900px;
+    height: 600px;
+    border-radius: 40px;
 }
 
-.board{
-    width: 500px;
+.board {
+    background-color: #F3EBE9;
+    width: 800px;
     height: 500px;
-    border: 1px solid red;
     display: grid;
+}
+
+.titulo {
+    padding: 20px;
+}
+
+.titulo h1 {
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'Rubik Marker Hatch', cursive;
+    color: #fff;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+#black {
+    background-color: #000;
+    color: #fff;    
+}
+
+#random {
+    background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%);
+    color: #000;    
+}
+
+#sizeBoard{
+    text-align: center;
+    width: 500px;
+    height: 30px;
+    margin: 5px 0 30px;
+    border-radius: 10px;
+    border:none;
+    background-image:none;
+    box-shadow: none;
+}
+
+.circle{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: #ACFA08;
+}
+
+.sets{
+    display: flex;
+    margin: 0 0 20px;
+    align-items: center;
+    gap: 50px;
 }

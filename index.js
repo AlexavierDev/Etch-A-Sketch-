@@ -1,11 +1,11 @@
 let color = 'black'
-let board = document.querySelector(".board")
-let squares = board.querySelectorAll("div")
+
 
 
 function madeBoard(size) {
 
-
+    let board = document.querySelector(".board")
+    let squares = board.querySelectorAll("div")
 
     squares.forEach((div) => div.remove())
 
@@ -17,6 +17,7 @@ function madeBoard(size) {
 
     for (i = 0; i < amount; i++) {
         let square = document.createElement("div")
+        square.style.border = "1px solid #F3EBE9"
         square.addEventListener("mouseover", colorSquare)
         board.insertAdjacentElement('beforeend', square)
     }
