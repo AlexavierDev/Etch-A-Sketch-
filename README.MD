@@ -1,4 +1,4 @@
-##Etch-A-Sketch in JS
+# Etch-A-Sketch in JS
 
 Project to create something like [**Etch A Sketch**](https://en.wikipedia.org/wiki/Etch_A_Sketch) toy using only HTML, CSS and JS.
 
