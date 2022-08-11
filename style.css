@@ -6,7 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(/media/backgroundKids.jpg);
+    background-image: url(./media/backgroundKids.jpg);
    
   box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.504);
 }
